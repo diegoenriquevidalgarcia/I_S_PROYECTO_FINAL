@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>CÓDIGO</th>
+            <th>NOMBRE</th>
+            <th>DURACIÓN</th>
+            <th>PRECIO</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of CursoList">
+            <td>{{dataItem.codigo}}</td>
+            <td>{{dataItem.nombre}}</td>
+            <td>{{dataItem.duracion}}</td>
+            <td>{{dataItem.precio}}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1">
+                    Edit
+                </button>
+                <button type="button" class="btn btn-light mr-1">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
